@@ -20,6 +20,10 @@ def startup():
 async def root():
     return {"message": "Hello World"}
 
+@app.get("/notes")
+def get_all_notes(db: Session = Depends(get_db)):
+    return db.query(models.Note).all()
+
 @app.post("/notes")
 def create_note(note: schemas.NoteCreate, db: Session = Depends(get_db)):
     db_note = models.Note(title=note.title, content=note.content)
