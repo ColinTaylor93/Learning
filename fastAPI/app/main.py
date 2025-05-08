@@ -66,7 +66,7 @@ def delete_note(note_id: int, db: Session = Depends(get_db)):
     Deletes a single note by its ID.
 
     Returns:
-        models.Note: The note with the specified ID.
+        204 No Content
 
     Raises:
         HTTPException (404): If the note with the given ID is not found.
@@ -82,3 +82,28 @@ def delete_note(note_id: int, db: Session = Depends(get_db)):
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"Failed to delete file: {str(e)}")
         return
+
+@app.patch("/notes/{note_id}")
+def update_note(note: schemas.NoteCreate, note_id: int, db: Session = Depends(get_db)):
+    """
+    Updates a single note by its ID.
+
+    Returns:
+        models.Note: The note with the specified ID.
+
+    Raises:
+        HTTPException (404): If the note with the given ID is not found.
+        HTTPException (500): If the note failed to be updated.
+    """
+    try:
+        note_to_update = db.query(models.Note).filter(models.Note.id == note_id).first()
+        if not note_to_update:
+            raise HTTPException(status_code=404, detail="Note not found")
+        else:
+            note_to_update.title = note.title
+            note_to_update.content = note.content
+            db.commit()
+            db.refresh(note_to_update)
+        return note_to_update
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to update file: {str(e)}")
