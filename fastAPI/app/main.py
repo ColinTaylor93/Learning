@@ -107,3 +107,13 @@ def update_note(note: schemas.NoteCreate, note_id: int, db: Session = Depends(ge
         return note_to_update
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to update file: {str(e)}")
+
+@app.post("/notes/contentSearch")
+def find_content(search: schemas.NoteContentSearch, db: Session = Depends(get_db)):
+    """
+    Retrieve an array of notes if the search is contained in the content.
+
+    Returns:
+        models.Note: Array of notes with the content being searched
+    """
+    return db.query(models.Note).filter(models.Note.content.contains(f"%{search.content}%")).all()
