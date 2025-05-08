@@ -1,7 +1,6 @@
 from fastapi import FastAPI, Depends
-from . import database
-from pydantic import BaseModel
 from sqlalchemy.orm import Session
+from . import database, models, schemas
 
 app = FastAPI()
 
@@ -20,3 +19,11 @@ def startup():
 @app.get("/")
 async def root():
     return {"message": "Hello World"}
+
+@app.post("/notes")
+def create_note(note: schemas.NoteCreate, db: Session = Depends(get_db)):
+    db_note = models.Note(title=note.title, content=note.content)
+    db.add(db_note)
+    db.commit()
+    db.refresh(db_note)
+    return db_note
