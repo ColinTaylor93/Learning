@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.1">
+  <diagram name="Page-1" id="knI0wj16hel3eAjlftyc">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-17" target="aW0Ik9uLdqCp9XRby9uQ-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-17" target="aW0Ik9uLdqCp9XRby9uQ-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="130" as="sourcePoint" />
+            <mxPoint x="125" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="97" y="130" />
+              <mxPoint x="240" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-3" target="aW0Ik9uLdqCp9XRby9uQ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-3" target="aW0Ik9uLdqCp9XRby9uQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-3" value="REST API service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="70" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-4" target="aW0Ik9uLdqCp9XRby9uQ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-4" value="Network Load Balancer" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.network_load_balancer;" vertex="1" parent="1">
+          <mxGeometry x="260" y="40" width="80" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-7" value="Blob storage" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/BlobBlock.svg;" vertex="1" parent="1">
+          <mxGeometry x="630" y="70" width="140" height="117.6" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-9" target="aW0Ik9uLdqCp9XRby9uQ-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="613.5999999999999" y="316.4000000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="316" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-9" value="Metadata storage" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" vertex="1" parent="1">
+          <mxGeometry x="440" y="265.20000000000005" width="102.4" height="102.4" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="aW0Ik9uLdqCp9XRby9uQ-11" target="aW0Ik9uLdqCp9XRby9uQ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-11" value="CDN for downloading" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aW0Ik9uLdqCp9XRby9uQ-17" value="User - frontend service" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="90" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
