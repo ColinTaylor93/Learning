@@ -40,10 +40,16 @@ and flexibility with fields
 - Downloads are provided through a CDN, each time a file is uploaded a CDN link is provided
   -  this also gives the security and reliability we need for the downloads
 - The metadata can contain IDs for who has access that can be checked
+- DB's should also be shared for availability and storage needs
 - Syncing files can be a SSE like a PUT request to update the files?
 
 ## Review thoughts & research into other solutions
 - A separate table for sharing files would be better because keeping the share in the files metadata
 would be a slow query to make
-- A relational DB would be better for speed and following a heirarchal structure like folders
+- A relational DB would be better for speed and following a structure like folders
 - Changes to files would be huge requests, so breaking files down blocks could make the requests smaller
+- Could add a polling service that checks the blob for files that aren't being accessed and places 
+them into cold storage
+   - this would speed up retrieval for new/frequent files and save on costs at the cost of 
+   slow speed for when they are finally used
+- Recently added files could have their metadata in a cache instead for speed
