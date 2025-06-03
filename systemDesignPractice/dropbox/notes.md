@@ -31,6 +31,8 @@ Used requirements from here: https://www.hellointerview.com/learn/system-design/
 3. PATCH - share the file
 4. PUT - syncing files 
 
+## Design
+![img.png](img.png)
 
 ## Design notes
 - The user sends a request to the load balancer, and they go to the services that are horizontally scaled; 
