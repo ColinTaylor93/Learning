@@ -31,3 +31,6 @@ so geolocating systems makes sense
 - The cache is for commonly shortened URLs so they can be accessed quickly
 - The message queue can be kafka to support large traffic by having different 
 brokers for regions or URL's
+
+## Design
+![img.png](img.png)
