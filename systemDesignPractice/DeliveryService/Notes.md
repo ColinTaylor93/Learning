@@ -51,3 +51,11 @@ using guide from [here](https://www.hellointerview.com/learn/system-design/probl
 
 ### Screenshot
 ![img.png](img.png)
+
+## Review thoughts & research into other solutions
+
+- Postgres for the database makes sense because we would want to ACID compliance
+  - particularly the 'A' for atomicity, we want the entire transaction to take place of not at all
+  - 'I' for isolation is also important because then we can handel simultaneous transactions
+- Having separate tables (or DBs) for "distribution centers" would make sense
+- You could shard the DB by postal or zip codes since they're region-based already
