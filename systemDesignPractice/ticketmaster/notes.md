@@ -47,3 +47,11 @@ Using a guide from [here](https://www.hellointerview.com/learn/system-design/pro
 ## Review thoughts and research into other solutions
 
 - 1st thought was should there be 2 databases, 1 for tickers and another for events
+  - The Event viewing DB could be something like elasticsearch for better read speeds 
+- Events viewing and searching could have been 2 different services
+- Need to mention the DB will use row-level locking or optimistic concurrency control (OCC)
+- Adding stripe to the design makes sense to do instead of mentioning it
+- You could add a redis cache to temporary store a ticker will payment info is being added so that
+a user doesn't lose out on a ticket while entering their information
+  - Distributed lock - time to live (TTL)
+- Could also use another cache for frequently viewed events
