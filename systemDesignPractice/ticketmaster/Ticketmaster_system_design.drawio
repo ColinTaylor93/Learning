@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="529wNl6Oy085xDnrhqR8">
+    <mxGraphModel dx="2037" dy="1073" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oGA4mzF8Sejtjxil2VU--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--1" target="oGA4mzF8Sejtjxil2VU--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--1" target="oGA4mzF8Sejtjxil2VU--2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--1" value="User frontend service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="70" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--13" value="GET /event/id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--2" target="oGA4mzF8Sejtjxil2VU--6">
+          <mxGeometry x="0.6418" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--14" value="GET /event/region" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--2" target="oGA4mzF8Sejtjxil2VU--6">
+          <mxGeometry x="-0.6667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--15" value="POST /event/pruchase/id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--2" target="oGA4mzF8Sejtjxil2VU--7">
+          <mxGeometry x="0.5932" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--18" value="Event Database (By Region)" style="group;labelPosition=center;verticalLabelPosition=bottom;align=center;verticalAlign=top;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="320" y="590" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--10" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="oGA4mzF8Sejtjxil2VU--18">
+          <mxGeometry x="55" width="75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--16" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="oGA4mzF8Sejtjxil2VU--18">
+          <mxGeometry x="30" width="75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--17" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="oGA4mzF8Sejtjxil2VU--18">
+          <mxGeometry width="75" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--2" value="Geo located load balancers" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="220" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--6" target="oGA4mzF8Sejtjxil2VU--17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--6" value="Region Specific Viewing Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="380" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--7" value="Region Specific Booking Service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="380" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--19" target="oGA4mzF8Sejtjxil2VU--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--19" value="Ticket Purchase Queue" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;shape=mxgraph.azure.queue_generic;pointerEvents=1;fillColor=#eeeeee;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="460" y="510" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="oGA4mzF8Sejtjxil2VU--21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oGA4mzF8Sejtjxil2VU--7" target="oGA4mzF8Sejtjxil2VU--19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
