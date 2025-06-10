@@ -50,4 +50,9 @@ Using a guide from [here](https://www.hellointerview.com/learn/system-design/pro
 
 ## Review thoughts and research into other solutions
 
-
+- The guide mentioned using dynamoDB, but I figured mongo was good
+  - DynamoDB is AWS specific, easy to configure and scale infinitely
+- Since following is a many-to-many relationship a graph database would be way better for storing that
+- Storing follows in an array is really bad solution
+   - Guide recommened a second table for follows using Global Secondary Index (GSI)
+- LRU cache was a good idea for posts
