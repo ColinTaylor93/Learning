@@ -52,3 +52,11 @@ Also, handles the acceptance or refusal request
 ![img.png](img.png)
 
 ## Review thoughts & research into other solutions
+- Rider acceptance request is a PATCH requests since it just updates the ride information
+- A database can store fare estimations since there are likely to be repeat requests, and we can avoid hitting the Google Maps api everytime
+- Can use a poller to update driver locations and also store that in the DB
+- Could use a cloud messaging system for event handling for rides
+   - something like firebase cloud messaging
+- Google Maps API shouldn't be used for pinging driver locations constantly
+  - A redis cache could be used for keeping driver locations
+- A lock for ride request lengths can be set using a redis cache and a TTL
