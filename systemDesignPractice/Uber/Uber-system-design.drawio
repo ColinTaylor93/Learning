@@ -1,0 +1,107 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.4">
+  <diagram name="Page-1" id="vgfJBlm-sastvJkuR6_5">
+    <mxGraphModel dx="1426" dy="751" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x9NQsn565UukbJ-uFtt1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-1" target="x9NQsn565UukbJ-uFtt1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-1" value="Rider frontend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="80" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-6" value="GET /estimate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-2" target="x9NQsn565UukbJ-uFtt1-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-2" target="x9NQsn565UukbJ-uFtt1-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-41" value="Accept or refuse ride rquest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-2" target="x9NQsn565UukbJ-uFtt1-34">
+          <mxGeometry x="-0.299" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-2" value="API gateway - Load balancer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="80" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-9" value="Get distance&amp;nbsp;&lt;div&gt;estimate&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-4" target="x9NQsn565UukbJ-uFtt1-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-4" value="Fare estimation service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="94.7" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-5" value="Possible rides cache" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Cache_Redis_Product.svg;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="61.9" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-7" value="Add possible upcoming rides" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.269;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-4" target="x9NQsn565UukbJ-uFtt1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-8" value="Google Maps API" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;shape=mxgraph.weblogos.google" vertex="1" parent="1">
+          <mxGeometry x="600" y="90" width="65.2" height="69.4" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-10" value="Rides Database" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/Azure_Database_PostgreSQL_Server.svg;" vertex="1" parent="1">
+          <mxGeometry x="650" y="410" width="67.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-11" target="x9NQsn565UukbJ-uFtt1-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-40" value="SSE for sending&lt;div&gt;request to driver&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-11" target="x9NQsn565UukbJ-uFtt1-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-11" value="Ride Queue" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.kafka;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="250" y="422.88999999999993" width="86.7" height="64.22" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-12" value="POST /request-ride" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.681;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-2" target="x9NQsn565UukbJ-uFtt1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-15" value="Ride queue service" style="whiteSpace=wrap;html=1;verticalAlign=top;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400.00000000000006" y="424.9999999999999" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-18" value="Store long term&lt;div&gt;record of ride&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.03;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-15" target="x9NQsn565UukbJ-uFtt1-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-22" value="Check cache for&amp;nbsp;&lt;div&gt;confirmed request&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-21" target="x9NQsn565UukbJ-uFtt1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-23" value="Find closest driver" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-21" target="x9NQsn565UukbJ-uFtt1-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-37" value="Found driver to&amp;nbsp;&lt;div&gt;send request to&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-21" target="x9NQsn565UukbJ-uFtt1-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-21" value="Driver finder polling service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="230.7" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-24" target="x9NQsn565UukbJ-uFtt1-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-24" value="Driver frontend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="170" width="80" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.016;entryY=0.596;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-15" target="x9NQsn565UukbJ-uFtt1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-32" value="Update to confirmed ride" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="x9NQsn565UukbJ-uFtt1-31">
+          <mxGeometry x="-0.0588" y="-1" relative="1" as="geometry">
+            <mxPoint x="-1" y="39" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-34" value="Driver service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.911;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-34" target="x9NQsn565UukbJ-uFtt1-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9NQsn565UukbJ-uFtt1-42" value="Update ride information" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.015;entryY=0.878;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="x9NQsn565UukbJ-uFtt1-34" target="x9NQsn565UukbJ-uFtt1-10">
+          <mxGeometry x="-0.5868" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
